@@ -16,3 +16,24 @@ int main()
     return 0;
 }
 ```
+# 2023-03-30 5주차 c언어 수업
+```c
+#include <stdio.h>
+int main(void)
+{
+ int a,b;
+ scanf("%d %d",&a,&b);
+ if(a>b){
+    printf(">");
+ }
+ else if(a<b){
+    printf("<");
+ }
+
+ else if(a==b){
+    printf("==");
+ }
+
+ return 0; 
+}
+```
