@@ -37,3 +37,36 @@ int main()
  return 0; 
 }
 ```
+```c
+#include <stdio.h>
+int main(void)
+{   int a,b,d;
+    char c;
+    printf("수식을 입력하시오(예2 + 5)>>");
+    scanf("%d %c %d",&a,&c,&b);
+    switch (c)
+    {
+    case'+':
+        d=a+b;
+        break;
+    case'/':
+        d=a/b;
+        break;
+    case'-':
+        d=a-b;
+        break;
+    case'*':
+        d=a*b;
+        break;
+    case'%':
+        d=a%b;
+        break;                
+    default:
+        printf("지원되지 않는 수식입니다.");
+        break;
+    }
+    printf("%d %c %d = %d \n", a, c, b,d);
+
+return 0; 
+    }
+```
