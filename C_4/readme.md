@@ -19,7 +19,7 @@ int main()
 # 2023-03-30 5주차 c언어 수업
 ```c
 #include <stdio.h>
-int main(void)
+int main()
 {
  int a,b;
  scanf("%d %d",&a,&b);
