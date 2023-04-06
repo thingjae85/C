@@ -98,3 +98,16 @@ int main()
 
 }
 ```
+```c
+#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf_s("%d",&a);
+   for(int i=0;i<a;i++){
+    scanf_s("%d %d",&b,&c);
+    printf("%d\n",b+c);
+   }
+  return 0; 
+}
+```
