@@ -111,3 +111,15 @@ int main()
   return 0; 
 }
 ```
+```c
+#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf_s("%d",&a);
+   for(int i=1;i<=a;i++){
+    scanf_s("%d %d",&b,&c);
+    printf("Case #%d:%d + %d = %d\n",i,b,c,b+c);
+   }
+}
+```
