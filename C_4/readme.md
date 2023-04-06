@@ -70,3 +70,35 @@ int main(void)
 return 0; 
     }
 ```
+# 2023-04-06 6주차 c언어 수업
+```c
+#include<stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a,b,c;
+    srand((unsigned)time(NULL)); 
+    int answer = rand()%100;
+    do{
+       printf("예상 숫자를 입력하십시오: ");
+       scanf_s("%d",&a);
+         b++;
+       if(a<answer){
+         printf( "숫자가 낮습니다.\n");
+       }
+       if(a>answer){
+        printf("숫자가 높습니다.\n");
+       }
+    }while (a!=answer);
+
+    printf("축하합니다! 정답입니다.\n");
+    if(b==1)
+        {
+            printf("-갓-");
+        }
+    printf("당신의 시도 횟수: %d",b);
+
+    return 0;
+
+}
+```
