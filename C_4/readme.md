@@ -92,10 +92,6 @@ int main()
     }while (a!=answer);
 
     printf("축하합니다! 정답입니다.\n");
-    if(b==1)
-        {
-            printf("-갓-");
-        }
     printf("당신의 시도 횟수: %d",b);
 
     return 0;
