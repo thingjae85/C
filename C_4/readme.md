@@ -123,3 +123,19 @@ int main()
    }
 }
 ```
+# 2023-04-27 C언어 교안 연습문제들
+
+```c
+#include<stdio.h>
+
+int main()
+{   double light=300000;
+    double d=1496000000;
+    printf("빛의 속도는 %lfkm/s\n",light);
+    printf("태양과 지구와의 거리 %lfkm\n",d);
+    printf("도달 시간은 %lf초",d/light);
+    return 0;
+    
+}
+
+```
