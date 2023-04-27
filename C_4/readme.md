@@ -219,3 +219,26 @@ int main()3
 }
 
 ```
+```c
+#include<stdio.h>
+
+int main()
+{   
+
+    int i,n,sum; 
+    i=0;
+    sum=0;
+    n=1;
+    printf("종료하려면 음수를 입력하시오\n");
+   while (n>0)
+   {
+    printf("성적은 입력하시오:");
+    scanf_s("%d",&n);
+    sum=sum+n;
+    i++;
+   }
+   sum=(sum-n)/(i-1);
+   printf("평균은 %d입니다.",sum);
+   return 0;
+}
+```
