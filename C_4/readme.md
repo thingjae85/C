@@ -139,3 +139,23 @@ int main()
 }
 
 ```
+```c
+#include<stdio.h>
+
+int main()
+{   
+    int price,money,don;
+    
+    printf("물건 값을 입력하시오:");
+    scanf_s("%d",&price);
+    printf("투입한 금액을 입력하시오:");
+    scanf_s("%d",&money);
+    don=money-price;
+    printf("천원권 %d장\n",don/1000);
+    don=don%1000;
+    printf("오백원 동전 %d개\n",don/500);
+    don=don%500;
+    printf("백원동전 %d개",don/100);
+    return 0;
+}
+```
