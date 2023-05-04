@@ -242,6 +242,7 @@ int main()
    return 0;
 }
 ```
+# 2023-05-04 10주차 C언어 수업
 ```c
 #include <stdio.h>
 int main(){
@@ -257,7 +258,6 @@ int main(){
     return 0;
 }
 ```
-# 2023-05-04 10주차 C언어 수업
 ```c
 #include<stdio.h>
 int get_integer(void)
