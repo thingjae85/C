@@ -293,3 +293,17 @@ int main(){
     return 0;
 }
 ```
+```c
+#include<stdio.h>
+int main(){
+    int x,y;
+    int z=1;
+    printf("알고싶은 팩토리얼의 값은?:");
+    scanf_s("%d",&x);
+    for(y=1;y<=x;y++){
+        z*=y;
+    }
+    printf("%d!의 값은 %d 입니다.",x,z);
+    return 0;
+}
+```
