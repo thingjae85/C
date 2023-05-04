@@ -307,3 +307,22 @@ int main(){
     return 0;
 }
 ```
+```c
+#include<stdio.h>
+int wornl(int x){
+    if(x==1){
+        return 1;
+    }
+    else{
+        return x * wornl(x-1);
+    }
+}
+int main(){
+    int x;
+    printf("알고싶은 팩토리얼의 값은?:");
+    scanf_s("%d",&x);
+    int z=wornl(x);
+    printf("%d!의 값은 %d 입니다.",x,z);
+    return 0;
+}
+```
