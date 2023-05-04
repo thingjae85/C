@@ -242,3 +242,53 @@ int main()
    return 0;
 }
 ```
+```c
+#include <stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int k=5;k>i;k--){
+            printf(" ");
+        }
+        for(int x=0;x<i;x++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+```
+```c
+#include<stdio.h>
+int get_integer(void)
+{
+int value;
+printf("정수를 입력하시오: ");
+scanf_s("%d", &value);
+return value;
+}
+int add(int x, int y){
+    return x+y;
+}
+int minus(int x, int y){
+    return x-y;
+}
+int div(int x, int y){
+    return x/y;
+}
+int multi(int x, int y){
+    return x*y;
+}
+int main(){
+    int x=get_integer();
+    int y=get_integer();
+    int z=add(x,y);
+    printf("두수의 합은 %d입니다.\n",z);
+    z=minus(x,y);
+    printf("두수의 차는 %d입니다.\n",z);
+    z=multi(x,y);
+    printf("두수의 곱은 %d입니다.\n",z);
+    z=div(x,y);
+    printf("두수를 나눈값은 %d입니다.",z);
+    return 0;
+}
+```
