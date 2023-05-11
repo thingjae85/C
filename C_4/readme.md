@@ -326,3 +326,30 @@ int main(){
     return 0;
 }
 ```
+# 2023-05-11 11주차 c언어 수업
+```c
+#include<stdio.h>
+int solution(int x, char *y){
+    int answer=0;
+if(y=="S"){
+    answer=x*0.95;
+}
+if(y=="G"){
+    answer=x*0.9;
+}
+if (y=="V")
+{
+   answer=x*0.85;
+}
+
+return answer;
+}
+
+int main(){
+    int price=96900;
+    char *grade="S";
+    int rkqt=solution(price, grade);
+    printf("할인된 값은: %d입니다.",rkqt);
+
+}
+```
