@@ -353,3 +353,29 @@ int main(){
 
 }
 ```
+# 2023-05-18 12주차 c언어 수업
+```c
+//미완성임 집가서 완성시키기.
+#include<stdio.h>
+int main()
+{  
+    int a,b,c;
+    while(1){
+   printf("구간의 처음과 끝을 입력하세요:");
+   scanf_s("%d %d",&a,&b);
+   if((a>=2&&a<=9)&&(b>=2&&b<=9)){  
+       break;    
+   }
+   else{
+    printf("INPUT ERROR!\n");
+   }
+    }
+    if(a<b){
+   for(int i=1;i<=9;i++){
+    for{
+
+    }
+   } 
+    }
+}
+```
