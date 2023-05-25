@@ -379,3 +379,28 @@ int main()
     }
 }
 ```
+# 2023-05-25 13주차 c언어 수업
+```c
+#include <stdio.h> 
+int main() {
+  int a, b, c;
+  int sum;
+  int count;
+  int ar[10] = {0};
+  printf("값을 입력하세요: ");
+  scanf("%d %d %d", &a, &b, &c);
+  sum = a * b * c;
+  while (1) {
+    count = sum % 10;
+    ar[count] += 1;
+    sum /= 10;
+    if (sum == 0) {
+      break;
+    }
+  }
+  for (int i = 0; i < 10; i++)
+    printf("%d\n", ar[i]);
+
+  return 0;
+}
+```
