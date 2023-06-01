@@ -430,3 +430,24 @@ printf("%p %p \n", pf, &f);
 return 0;
 }
 ```
+# 2023-06-01 14주차 c언어 수업
+```c
+#include <stdio.h>
+#include <string.h>
+int main() {
+  char arr[10000];
+  int a=0;
+  int b=0;
+  scanf_s("%s", arr);
+  for (int x = 0; x < strlen(arr); x++) {
+    if (arr[x] == 'K' && arr[x + 1] == 'O' && arr[x + 2] == 'I') {
+      a++;
+    }
+    if (arr[x] == 'I' && arr[x + 1] == 'O' && arr[x + 2] == 'I') {
+      b++;
+    }
+  }
+  printf("%d\n", a);
+  printf("%d",b);
+}
+```
